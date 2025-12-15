@@ -53,3 +53,23 @@ footer {
   color: white;
   padding: 20px;
 }
+/* ----- ABOUT PAGE STYLING ----- */
+.content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+}
+
+.content h1, .content h2 {
+  color: #1d3a2f;
+}
+
+.content ul {
+  margin-left: 20px;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
