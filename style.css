@@ -18,8 +18,12 @@ header {
 }
 
 header .logo {
-  width: 100px;
+  width: 130px;
   height: auto;
+  display: block;
+  filter: brightness(0) invert(1); /* makes dark logo appear white on dark backgrounds */
+}
+
 }
 
 nav a {
