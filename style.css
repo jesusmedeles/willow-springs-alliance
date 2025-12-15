@@ -187,3 +187,10 @@ footer a:hover {
     font-size: 2em;
   }
 }
+footer a i {
+  margin-right: 6px;
+}
+
+footer a:hover i {
+  color: #c5f1db; /* lighter green accent on hover */
+}
