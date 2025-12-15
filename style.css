@@ -194,3 +194,26 @@ footer a i {
 footer a:hover i {
   color: #c5f1db; /* lighter green accent on hover */
 }
+
+/* ====== FACEBOOK FEED SECTION ====== */
+.facebook-feed {
+  background: #FFFFFF;
+  color: #204734;
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.facebook-feed h2 {
+  color: #2E604A;
+  margin-bottom: 20px;
+}
+
+.facebook-feed iframe {
+  width: 100% !important;
+  max-width: 500px;
+  margin: 0 auto;
+}
