@@ -1,114 +1,89 @@
+/* ===== Global Styles ===== */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
+  color: #2c2c2c;
+  background-color: #f4f4f4;
 }
 
+/* ===== Header ===== */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #1d3a2f;
+  background: #124734; /* dark green */
   color: white;
   padding: 10px 20px;
 }
 
-header .logo {
-  width: 80px;
+.logo {
+  width: 120px;
+  height: auto;
+  display: block;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
+  font-weight: 500;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
   text-decoration: underline;
 }
 
+/* ===== Hero Section ===== */
 .hero {
-  background: url('images/hero.jpg') no-repeat center center/cover;
+  background-color: #0f301f;
+  background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
 
 .hero h1 {
   font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
-.mission {
-  background: white;
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
+.hero p {
+  font-size: 1.2em;
 }
 
-footer {
-  text-align: center;
-  background: #333;
-  color: white;
-  padding: 20px;
-}
-/* ----- ABOUT PAGE STYLING ----- */
-.content {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-  background: white;
-}
-
-.content h1, .content h2 {
-  color: #1d3a2f;
-}
-
-.content ul {
-  margin-left: 20px;
-}
-
-.active {
-  font-weight: bold;
-  text-decoration: underline;
-}
-/* ----- JOIN MEETING PAGE ----- */
-.meeting-info {
+/* ===== Content Sections ===== */
+.content, .mission, .meeting-info, .contact-info, .contact-form {
   background: white;
   padding: 40px 20px;
   max-width: 900px;
-  margin: 20px auto;
+  margin: 30px auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.meeting-details {
-  background: #f3f8f3;
-  border-left: 5px solid #1d3a2f;
-  padding: 20px;
-  margin-top: 20px;
+h1, h2, h3 {
+  color: #124734;
 }
 
+/* ===== Forms ===== */
 .form-box {
   display: flex;
   flex-direction: column;
   gap: 10px;
   max-width: 400px;
   margin: 20px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-.form-box input,
-.form-box select {
+input, select, textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-.form-box button {
-  background: #1d3a2f;
+button {
+  background: #124734;
   color: white;
   border: none;
   padding: 10px;
@@ -116,31 +91,31 @@ footer {
   cursor: pointer;
 }
 
-.form-box button:hover {
-  background: #255b4a;
-}
-/* ----- CONTACT PAGE ----- */
-.contact-info, .contact-form, .map {
-  background: white;
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: 20px auto;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+button:hover {
+  background: #1c6a4a;
 }
 
-.contact-details a {
-  color: #1d3a2f;
-  text-decoration: none;
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background: #124734;
+  color: white;
+  padding: 20px;
 }
 
-.contact-details a:hover {
+footer a {
+  color: #c5f1db;
+}
+
+footer a:hover {
   text-decoration: underline;
 }
 
-textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+/* Responsive */
+@media (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
