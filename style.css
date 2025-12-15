@@ -119,3 +119,28 @@ footer {
 .form-box button:hover {
   background: #255b4a;
 }
+/* ----- CONTACT PAGE ----- */
+.contact-info, .contact-form, .map {
+  background: white;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.contact-details a {
+  color: #1d3a2f;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
