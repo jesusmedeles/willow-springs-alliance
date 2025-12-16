@@ -23,20 +23,41 @@ header {
   align-items: center;
   background: #3A7CA5; /* sky blue header */
   color: white;
-  padding: 20px 30px;
+  padding: 25px 40px; /* slightly more breathing room */
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .logo {
-  width: 160px;
+  width: 200px;  /* increased for stronger branding */
   height: auto;
   filter: brightness(0) invert(1);
+  transition: transform 0.3s ease; /* smooth hover effect */
 }
+
+.logo:hover {
+  transform: scale(1.05); /* gentle enlarge on hover */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  font-size: 1.05em;
+  transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+  color: #eaf4f9;
+}
+
 
 /* --- UPDATED HEADER TEXT STYLING --- */
 .header-text {
@@ -163,6 +184,28 @@ nav a.active {
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
+.welcome-subtext {
+  font-size: 1.15em;
+  color: #2e5f85; /* medium blue for contrast */
+  font-style: italic;
+  margin: 15px 0 25px 0;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.welcome-subtext strong {
+  font-size: 1.2em;
+  color: #3A7CA5; /* same as header blue */
+  font-style: normal;
+}
+
+.subtext-detail {
+  display: block;
+  font-size: 0.95em;
+  color: #365f7d;
+  margin-top: 5px;
+}
+
 
 /* ====== MISSION SECTION ====== */
 .mission {
