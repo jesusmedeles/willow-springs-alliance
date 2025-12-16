@@ -502,6 +502,54 @@ button:hover {
   margin-bottom: 10px;
 }
 
+/* ====== MEMBERSHIP INFO SECTION ====== */
+.membership-info {
+  background: #ffffff;
+  padding: 40px 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.membership-info h2 {
+  color: #3A7CA5;
+  margin-bottom: 20px;
+}
+
+.membership-info p {
+  font-size: 1.05em;
+  color: #2C2C2C;
+  margin-bottom: 25px;
+}
+
+.membership-fees {
+  background: #F8F7F3;
+  border-radius: 8px;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.membership-fees h3 {
+  color: #3A7CA5;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.membership-fees ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.membership-fees li {
+  font-size: 1.05em;
+  color: #2C2C2C;
+  margin-bottom: 10px;
+}
+
 /* ====== MEMBERSHIP BENEFITS SECTION ====== */
 .membership-benefits {
   background: #F8F7F3;
