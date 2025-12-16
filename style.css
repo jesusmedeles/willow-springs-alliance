@@ -132,7 +132,7 @@ nav a.active {
 }
 
 .welcome-content h2 {
-  color: #3A7CA5; /* updated to match header blue */
+  color: #3A7CA5;
   font-size: 1.9em;
   margin-bottom: 20px;
   font-weight: 700;
@@ -226,21 +226,21 @@ nav a.active {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* ====== FACEBOOK FEED & SOCIAL SECTION ====== */
+/* ====== FACEBOOK FEED & SOCIAL LINKS ====== */
 .facebook-feed {
   background: #FFFFFF;
-  color: #204734;
-  padding: 40px 20px 20px 20px;
+  color: #2C2C2C;
+  padding: 40px 20px 60px 20px;
   text-align: center;
   max-width: 1000px;
   margin: 30px auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 .facebook-feed h2 {
   color: #3A7CA5;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .facebook-feed iframe {
@@ -250,37 +250,39 @@ nav a.active {
   display: block;
 }
 
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links h3 {
+  color: #3A7CA5;
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: #3A7CA5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* ====== FOOTER ====== */
 footer {
   text-align: center;
   background: #3A7CA5;
   color: #E8DFD0;
-  padding: 25px 15px;
+  padding: 15px;
   border-radius: 0 0 8px 8px;
   max-width: 1000px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 30px auto;
 }
 
-footer h3 {
-  color: white;
-  margin-bottom: 10px;
-}
-
-footer a {
-  color: #E8DFD0;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer a i {
-  margin-right: 6px;
-}
-
-footer a:hover i {
-  color: #b7e1f9;
+footer p {
+  margin: 0;
+  font-size: 0.95em;
 }
 
 /* ====== FORMS ====== */
@@ -312,58 +314,6 @@ button {
 
 button:hover {
   background: #2c6d93;
-}
-/* ====== UPDATED FACEBOOK & SOCIAL LINKS ====== */
-.facebook-feed {
-  background: #FFFFFF;
-  color: #2C2C2C;
-  padding: 40px 20px;
-  text-align: center;
-  max-width: 1000px;
-  margin: 30px auto;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-}
-
-.facebook-feed h2 {
-  color: #3A7CA5;
-  margin-bottom: 25px;
-}
-
-.facebook-feed iframe {
-  width: 100% !important;
-  max-width: 500px;
-  margin: 0 auto 40px auto;
-  display: block;
-}
-
-.social-links {
-  margin-top: 10px;
-}
-
-.social-links h3 {
-  color: #3A7CA5;
-  margin-bottom: 10px;
-}
-
-.social-links a {
-  color: #3A7CA5;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.social-links a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  text-align: center;
-  background: #3A7CA5;
-  color: #E8DFD0;
-  padding: 15px;
-  border-radius: 0 0 8px 8px;
-  max-width: 1000px;
-  margin: 0 auto 30px auto;
 }
 
 /* ====== RESPONSIVE DESIGN ====== */
