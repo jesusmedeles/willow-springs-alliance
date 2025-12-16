@@ -9,7 +9,9 @@
   <!-- Font Awesome for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
+  <!-- HEADER -->
   <header>
     <div class="header-left">
       <img src="images/logo.svg" alt="Willow Springs Alliance Logo" class="logo">
@@ -23,7 +25,7 @@
     </nav>
 
     <!-- Western Silhouettes (matches across all pages) -->
-      <div class="header-silhouettes">
+    <div class="header-silhouettes">
       <img src="images/windmill.png" alt="Windmill silhouette" class="windmill">
       <img src="images/homes-silhouette.png" alt="Community houses silhouette" class="houses">
       <img src="images/cowboy-cattle.png" alt="Cowboy and cattle silhouette" class="cowboy-cattle">
@@ -32,79 +34,83 @@
     </div>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="content">
-    <section class="contact-info">
-      <h1>Contact Us</h1>
-      <p>
-        We’d love to hear from you! Whether you’re a local resident, business owner, 
-        or community partner, the Willow Springs Alliance welcomes your ideas and input.
-      </p>
-
-      <div class="contact-details">
-        <p><strong>Email:</strong> 
-          <a href="mailto:willowspringsalliance@yahoo.com">willowspringsalliance@yahoo.com</a>
+    <div class="page-container">
+      <section class="contact-info">
+        <h1>Contact Us</h1>
+        <p>
+          We’d love to hear from you! Whether you’re a local resident, business owner, 
+          or community partner, the Willow Springs Alliance welcomes your ideas and input.
         </p>
-        <p><strong>Phone:</strong> Coming soon (Google Voice number in progress)</p>
-        <p><em>Mailing address to be announced soon.</em></p>
-      </div>
-    </section>
 
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="https://formspree.io/f/xovgzklr" method="POST" class="form-box" id="contact-form">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+        <div class="contact-details">
+          <p><strong>Email:</strong> 
+            <a href="mailto:willowspringsalliance@yahoo.com">willowspringsalliance@yahoo.com</a>
+          </p>
+          <p><strong>Phone:</strong> Coming soon (Google Voice number in progress)</p>
+          <p><em>Mailing address to be announced soon.</em></p>
+        </div>
+      </section>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="https://formspree.io/f/xovgzklr" method="POST" class="form-box" id="contact-form">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
 
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
 
-        <button type="submit">Send Message</button>
-        <p id="success-message" style="display:none; color:green; font-weight:bold; margin-top:10px;">
-          ✅ Thank you! Your message has been sent successfully.
-        </p>
-      </form>
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-      <script>
-        const form = document.getElementById("contact-form");
-        const successMessage = document.getElementById("success-message");
+          <button type="submit">Send Message</button>
+          <p id="success-message" style="display:none; color:green; font-weight:bold; margin-top:10px;">
+            ✅ Thank you! Your message has been sent successfully.
+          </p>
+        </form>
 
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          fetch(form.action, {
-            method: "POST",
-            body: new FormData(form),
-            headers: { 'Accept': 'application/json' }
-          }).then(response => {
-            if (response.ok) {
-              successMessage.style.display = "block";
-              form.reset();
-            } else {
-              alert("Oops! There was a problem submitting your form. Please try again later.");
-            }
-          }).catch(error => {
-            alert("Network error. Please try again later.");
+        <script>
+          const form = document.getElementById("contact-form");
+          const successMessage = document.getElementById("success-message");
+
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            fetch(form.action, {
+              method: "POST",
+              body: new FormData(form),
+              headers: { 'Accept': 'application/json' }
+            }).then(response => {
+              if (response.ok) {
+                successMessage.style.display = "block";
+                form.reset();
+              } else {
+                alert("Oops! There was a problem submitting your form. Please try again later.");
+              }
+            }).catch(error => {
+              alert("Network error. Please try again later.");
+            });
           });
-        });
-      </script>
-    </section>
+        </script>
+      </section>
 
-    <section class="map">
-      <h2>Our Community Location</h2>
-      <p>Meetings and events are held at the Willow Springs Community Center.</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110928.56817183257!2d-98.5721014!3d29.4246002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c5b5e8b8b9e7f%3A0xdeeaaac0b2c573ab!2sSan%20Antonio%2C%20TX!5e0!3m2!1sen!2sus!4v1695678900000!5m2!1sen!2sus"
-        width="100%"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-      </iframe>
-    </section>
+      <section class="map">
+        <h2>Our Community Location</h2>
+        <p>Meetings and events are held at the Willow Springs Community Center.</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110928.56817183257!2d-98.5721014!3d29.4246002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c5b5e8b8b9e7f%3A0xdeeaaac0b2c573ab!2sSan%20Antonio%2C%20TX!5e0!3m2!1sen!2sus!4v1695678900000!5m2!1sen!2sus"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </section>
+    </div>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <h3>Follow Us</h3>
     <p>
