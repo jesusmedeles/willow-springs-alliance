@@ -86,57 +86,76 @@ nav a.active {
 
 /* ====== WESTERN SILHOUETTES IN HEADER (CLEANED & BALANCED) ====== */
 /* ====== WESTERN SILHOUETTES IN HEADER ====== */
+/* ====== WESTERN SILHOUETTES IN HEADER (Refined placement and transparency) ====== */
+/* ====== WESTERN SILHOUETTES IN HEADER (Final Polished Version) ====== */
 .header-silhouettes {
   position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
+  bottom: 0;
+  left: 220px; /* start after logo */
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  pointer-events: none; /* Keeps nav clickable */
-  opacity: 0.15;        /* Slightly stronger visibility */
+  pointer-events: none;
   z-index: 0;
-  padding: 0 20px;      /* Adds a little side spacing */
+  opacity: 0.15;
+  padding-right: 40px;
 }
 
 .header-silhouettes img {
-  height: 120px; /* Larger height for stronger impact */
   width: auto;
+  height: 110px;
   filter: brightness(10) invert(1);
-  opacity: 0.85;
+  opacity: 0.8;
+  mix-blend-mode: lighten; /* soft blend with header background */
+  background: transparent;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Individual silhouette adjustments for scale and position */
+.header-silhouettes .windmill {
+  height: 130px;
+  opacity: 0.6;
   transform: translateY(5px);
 }
 
-.header-silhouettes img.windmill {
-  height: 130px;
-  opacity: 0.9;
+.header-silhouettes .houses {
+  height: 115px;
+  opacity: 0.75;
+  transform: translateY(10px);
 }
 
-.header-silhouettes img.houses {
-  height: 100px;
-  opacity: 0.8;
-}
-
-.header-silhouettes img.cowboy-cattle {
+.header-silhouettes .cowboy-cattle {
   height: 125px;
-  opacity: 0.9;
+  opacity: 0.8;
+  transform: translateY(8px);
 }
 
-.header-silhouettes img.handshake {
+.header-silhouettes .handshake {
   height: 110px;
+  opacity: 0.7;
+  transform: translateY(12px);
+}
+
+.header-silhouettes .bullrider {
+  height: 140px;
   opacity: 0.85;
+  transform: translateY(0px);
 }
 
-.header-silhouettes img.bullrider {
-  height: 135px; /* Slightly larger for visual focus */
-  opacity: 0.95;
-}
-
+/* Keeps logo and nav on top of silhouettes */
 header > *:not(.header-silhouettes) {
   position: relative;
   z-index: 1;
 }
+
+
+/* Keeps header text and logo above silhouettes */
+header > *:not(.header-silhouettes) {
+  position: relative;
+  z-index: 1;
+}
+
 
 /* Responsive adjustment — hides silhouettes on small screens */
 @media (max-width: 768px) {
