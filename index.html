@@ -1,45 +1,125 @@
-<header>
-  <div class="header-left">
-    <img src="images/logo.svg" alt="Willow Springs Alliance Logo" class="logo">
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willow Springs Alliance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="join.html">Join Our Meeting</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <img src="images/logo.svg" alt="Willow Springs Alliance Logo" class="logo">
+    </div>
 
-<!-- Welcome Section -->
-<section class="welcome">
-  <div class="welcome-content">
-    <h2>Building a Stronger Eastside — Together</h2>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="join.html">Join Our Meeting</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <p class="welcome-subtext">
-      <em>Where Businesses & Neighborhoods Come Together — Serving Skyline Park, Willowwood Estates, Meadowview North, Meadowview Park, Salado Creek, and surrounding communities.</em>
-    </p>
+  <!-- WELCOME SECTION -->
+  <section class="welcome">
+    <div class="welcome-content">
+      <h2>Building a Stronger Eastside — Together</h2>
 
-    <p>
-      The Willow Springs Alliance is a community-driven nonprofit uniting residents, businesses, 
-      and local partners across the neighborhoods surrounding the Frost Bank Center corridor — 
-      including Willowwood Estates, Meadowview North, Meadowview Park, Skyline Park, Salado Creek, 
-      and our neighboring communities.
-    </p>
+      <p class="welcome-subtext">
+        <strong><em>Where Businesses & Neighborhoods Come Together</em></strong><br>
+        <span class="subtext-detail">
+          Serving Skyline Park, Willowwood Estates, Meadowview North, Meadowview Park, Salado Creek, and surrounding communities.
+        </span>
+      </p>
 
-    <p>
-      We work hand-in-hand to create a vibrant, safe, and thriving Eastside where families, businesses, 
-      and neighbors grow together.
-    </p>
+      <p>
+        The Willow Springs Alliance is a community-driven nonprofit uniting residents, businesses, 
+        and local partners across the neighborhoods surrounding the Frost Bank Center corridor — 
+        including Willowwood Estates, Meadowview North, Meadowview Park, Skyline Park, Salado Creek, 
+        and our neighboring communities.
+      </p>
 
-    <p>
-      Rooted in collaboration and pride, our alliance is powered by volunteers who believe in the strength 
-      of community and the importance of having every voice heard. Together, we honor our past while shaping 
-      a resilient, connected, and opportunity-rich future for everyone who calls Willow Springs home.
-    </p>
-  </div>
+      <p>
+        We work hand-in-hand to create a vibrant, safe, and thriving Eastside where families, businesses, 
+        and neighbors grow together.
+      </p>
 
-  <div class="welcome-image">
-    <img src="images/wsa-community.jpg" alt="Neighbors and businesses working together in the community">
-  </div>
-</section>
+      <p>
+        Rooted in collaboration and pride, our alliance is powered by volunteers who believe in the strength 
+        of community and the importance of having every voice heard. Together, we honor our past while shaping 
+        a resilient, connected, and opportunity-rich future for everyone who calls Willow Springs home.
+      </p>
+    </div>
+
+    <div class="welcome-image">
+      <img src="images/wsa-community.jpg" alt="Neighbors and businesses working together in the community">
+    </div>
+  </section>
+
+  <!-- MISSION SECTION -->
+  <section class="mission">
+    <div class="mission-container">
+      <div class="mission-text">
+        <h2>Our Mission</h2>
+        <ul>
+          <li>Promote beautification, revitalization, and quality-of-life improvements across the community.</li>
+          <li>Support responsible economic development and strengthen business corridors.</li>
+          <li>Advocate for community priorities with the City of San Antonio, Bexar County, and partner agencies.</li>
+          <li>Enhance neighborhood safety, unity, and civic engagement.</li>
+          <li>Elevate the voices of families, seniors, youth, renters, veterans, and stakeholders.</li>
+          <li>Preserve the cultural, historic, and economic vitality of the Willow Springs region.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WILLOW SPRINGS IMAGE -->
+  <section class="willow-photo">
+    <img src="images/willow-springs.jpg" alt="Willow Springs neighborhood view">
+  </section>
+
+  <!-- FACEBOOK FEED -->
+  <section class="facebook-feed">
+    <h2>Community Updates</h2>
+
+    <div class="fb-page"
+         data-href="https://www.facebook.com/profile.php?id=61584512867312"
+         data-tabs="timeline"
+         data-width="500"
+         data-height="600"
+         data-small-header="false"
+         data-adapt-container-width="true"
+         data-hide-cover="false"
+         data-show-facepile="true">
+      <blockquote cite="https://www.facebook.com/profile.php?id=61584512867312" class="fb-xfbml-parse-ignore">
+        <a href="https://www.facebook.com/profile.php?id=61584512867312">Willow Springs Alliance</a>
+      </blockquote>
+    </div>
+
+    <div class="social-links">
+      <h3>Follow Us</h3>
+      <p>
+        <a href="https://www.facebook.com/profile.php?id=61584512867312" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+        &nbsp; | &nbsp;
+        <a href="https://www.instagram.com/willowspringsalliance/" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Willow Springs Alliance</p>
+  </footer>
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" 
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" 
+    nonce="willowsprings"></script>
+</body>
+</html>
