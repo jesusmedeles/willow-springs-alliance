@@ -3,11 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join Our Next Meeting | Willow Springs Alliance</title>
+  <title>Members – Our Next Community Meeting | Willow Springs Alliance</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
+  <!-- HEADER -->
   <header>
+    <div class="header-silhouettes">
+      <img src="images/windmill.png" alt="Windmill silhouette" class="windmill">
+      <img src="images/homes-silhouette.png" alt="Community houses silhouette" class="houses">
+      <img src="images/cowboy-cattle.png" alt="Cowboy and cattle silhouette" class="cowboy-cattle">
+      <img src="images/handshake.png" alt="Handshake silhouette" class="handshake">
+      <img src="images/bullrider.png" alt="Bull rider silhouette" class="bullrider">
+    </div>
+
     <div class="header-left">
       <img src="images/logo.svg" alt="Willow Springs Alliance Logo" class="logo">
     </div>
@@ -18,57 +29,42 @@
       <a href="join.html" class="active">Join Our Meeting</a>
       <a href="contact.html">Contact</a>
     </nav>
-
-    <!-- Western Silhouettes -->
-      <div class="header-silhouettes">
-      <img src="images/windmill.png" alt="Windmill silhouette" class="windmill">
-      <img src="images/homes-silhouette.png" alt="Community houses silhouette" class="houses">
-      <img src="images/cowboy-cattle.png" alt="Cowboy and cattle silhouette" class="cowboy-cattle">
-      <img src="images/handshake.png" alt="Handshake silhouette" class="handshake">
-      <img src="images/bullrider.png" alt="Bull rider silhouette" class="bullrider">
-    </div>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="content">
     <section class="meeting-info">
-      <h1>Join Our Next Community Meeting</h1>
-      <p>
-        The Willow Springs Alliance meets monthly to discuss neighborhood improvements, 
-        upcoming projects, and community priorities. Everyone is welcome — residents, 
-        business owners, and supporters!
-      </p>
+      <div class="page-container">
+        <h1>Members – Our Next Community Meeting</h1>
 
-      <div class="meeting-details">
-        <h2>Next Meeting Details</h2>
-        <p><strong>Date:</strong> January 14, 2026</p>
-        <p><strong>Time:</strong> 6:30 PM – 8:00 PM</p>
-        <p><strong>Location:</strong> Willow Springs Community Center, 1234 Elm Street, San Antonio, TX</p>
+        <p>
+          The Willow Springs Alliance meets monthly to discuss neighborhood improvements, 
+          ongoing projects, and community priorities within our area. These meetings provide 
+          an opportunity for members to stay informed, collaborate, and contribute to the 
+          growth of our Eastside community.
+        </p>
+
+        <div class="meeting-details">
+          <h2>Next Meeting Details</h2>
+          <p><strong>Date:</strong> January 14, 2026</p>
+          <p><strong>Time:</strong> 6:30 PM – 8:00 PM</p>
+          <p><strong>Location:</strong> Willow Springs Community Center, 1234 Elm Street, San Antonio, TX</p>
+        </div>
+
+        <section class="membership-info">
+          <h2>Interested in Becoming a Member?</h2>
+          <p>
+            If you would like to attend our next meeting or become a member, and you live or have a business 
+            within the Willow Springs boundaries, please email us directly at 
+            <a href="mailto:willowspringsalliance@yahoo.com">willowspringsalliance@yahoo.com</a> 
+            for instructions and membership information.
+          </p>
+        </section>
       </div>
-    </section>
-
-    <section class="rsvp-form">
-      <h2>RSVP to Attend</h2>
-      <p>Let us know you’re coming so we can plan refreshments and seating.</p>
-
-      <form action="#" method="POST" class="form-box">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="attending">Will you attend?</label>
-        <select id="attending" name="attending">
-          <option value="yes">Yes, I’ll be there!</option>
-          <option value="maybe">Maybe</option>
-          <option value="no">Can’t make it</option>
-        </select>
-
-        <button type="submit">Submit RSVP</button>
-      </form>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <h3>Follow Us</h3>
     <p>

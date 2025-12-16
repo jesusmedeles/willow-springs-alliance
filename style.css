@@ -501,6 +501,30 @@ button:hover {
 .landmark-list li {
   margin-bottom: 10px;
 }
+/* ====== JOIN PAGE STYLING ====== */
+.page-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #F8F7F3;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.page-container h1, 
+.page-container h2 {
+  color: #3A7CA5;
+}
+
+.page-container a {
+  color: #3A7CA5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page-container a:hover {
+  text-decoration: underline;
+}
 
 /* ====== RESPONSIVE DESIGN ====== */
 @media (max-width: 768px) {
