@@ -85,52 +85,66 @@ nav a.active {
 }
 
 /* ====== WESTERN SILHOUETTES IN HEADER (CLEANED & BALANCED) ====== */
+/* ====== WESTERN SILHOUETTES IN HEADER ====== */
 .header-silhouettes {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
-  pointer-events: none;
-  opacity: 0.15; /* balanced translucence */
+  pointer-events: none; /* Keeps nav clickable */
+  opacity: 0.15;        /* Slightly stronger visibility */
   z-index: 0;
-  padding: 0 20px;
+  padding: 0 20px;      /* Adds a little side spacing */
 }
 
 .header-silhouettes img {
-  height: 70px;
+  height: 120px; /* Larger height for stronger impact */
   width: auto;
   filter: brightness(10) invert(1);
-  opacity: 0.9;
-  object-fit: contain;
+  opacity: 0.85;
+  transform: translateY(5px);
 }
 
 .header-silhouettes img.windmill {
-  height: 80px;
-  opacity: 0.8;
+  height: 130px;
+  opacity: 0.9;
 }
 
 .header-silhouettes img.houses {
-  height: 60px;
-  opacity: 0.7;
-}
-
-.header-silhouettes img.cowboy-cattle {
-  height: 85px;
-  opacity: 0.85;
-}
-
-.header-silhouettes img.handshake {
-  height: 75px;
+  height: 100px;
   opacity: 0.8;
 }
 
+.header-silhouettes img.cowboy-cattle {
+  height: 125px;
+  opacity: 0.9;
+}
+
+.header-silhouettes img.handshake {
+  height: 110px;
+  opacity: 0.85;
+}
+
 .header-silhouettes img.bullrider {
-  height: 90px;
+  height: 135px; /* Slightly larger for visual focus */
   opacity: 0.95;
 }
+
+header > *:not(.header-silhouettes) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive adjustment — hides silhouettes on small screens */
+@media (max-width: 768px) {
+  .header-silhouettes {
+    display: none;
+  }
+}
+
 
 /* Optional soft fade at bottom for a polished look */
 header::after {
