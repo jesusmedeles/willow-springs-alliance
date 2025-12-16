@@ -616,3 +616,82 @@ nav img.usa-flag {
   position: relative;
   top: 2px;
 }
+/* ====== LEADERSHIP PAGE ====== */
+.leadership-section {
+  background: #F8F7F3;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.leadership-section h1 {
+  color: #3A7CA5;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  color: #2C2C2C;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1em;
+}
+
+.leader-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.leader-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.leader-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.leader-info h2 {
+  color: #3A7CA5;
+  margin: 0 0 5px;
+  font-size: 1.3em;
+}
+
+.leader-info h3 {
+  color: #2C2C2C;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+.leader-info p {
+  color: #2C2C2C;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .leader-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leader-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
