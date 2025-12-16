@@ -401,3 +401,129 @@ button:hover {
     width: 90%;
   }
 }
+/* ====== ABOUT PAGE STYLING ====== */
+.about-section {
+  background: #F8F7F3;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* ====== BEAUTIFICATION GALLERY ====== */
+.photo-gallery {
+  text-align: center;
+  background: #ffffff;
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.photo-gallery h2 {
+  color: #3A7CA5;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ====== LANDMARKS GALLERY ====== */
+.landmarks {
+  background: #F8F7F3;
+  padding: 50px 30px;
+  max-width: 1100px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.landmarks h2 {
+  color: #3A7CA5;
+  margin-bottom: 20px;
+}
+
+.landmark-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.landmark-item {
+  text-decoration: none;
+  color: #2C2C2C;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landmark-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landmark-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.landmark-item p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #3A7CA5;
+  font-size: 1.05em;
+}
+
+.landmark-list {
+  list-style-type: disc;
+  margin-left: 40px;
+  text-align: left;
+  color: #2C2C2C;
+  font-size: 1.05em;
+}
+
+.landmark-list li {
+  margin-bottom: 10px;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 768px) {
+  .gallery-grid img,
+  .landmark-item img {
+    height: 180px;
+  }
+
+  .landmark-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-section,
+  .photo-gallery,
+  .landmarks {
+    padding: 30px 15px;
+  }
+}
