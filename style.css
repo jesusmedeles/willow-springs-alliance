@@ -7,21 +7,52 @@ body {
   background-color: #FAF8F3; /* soft cream background */
 }
 
+h1, h2, h3 {
+  color: #204734; /* dark green headings for contrast */
+}
+
+ul {
+  margin-left: 20px;
+}
+
 /* ====== HEADER ====== */
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background: #2E604A; /* dark green header */
   color: white;
-  padding: 10px 20px;
+  padding: 20px 30px;
 }
 
-header .logo {
-  width: 130px;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 160px; /* slightly larger logo */
   height: auto;
-  display: block;
   filter: brightness(0) invert(1); /* makes dark SVG logos appear white on dark backgrounds */
+}
+
+.header-text {
+  max-width: 600px;
+}
+
+.site-title {
+  font-size: 1.4em;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.site-subtitle {
+  margin: 5px 0 0;
+  font-size: 0.95em;
+  color: #e6f2eb;
 }
 
 nav a {
@@ -79,45 +110,143 @@ nav a.active {
   font-size: 1.2em;
 }
 
-/* ====== CONTENT SECTIONS ====== */
-.content,
-.mission,
-.meeting-info,
-.contact-info,
-.contact-form {
-  background: #F5F3EC; /* soft off-white background */
+/* ====== WELCOME SECTION ====== */
+.welcome {
+  background: #F8F7F3; /* soft cream background */
+  padding: 60px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.welcome-content {
+  flex: 1 1 55%;
+  color: #2C2C2C;
+  line-height: 1.8;
+}
+
+.welcome-content h2 {
+  color: #1E4C36;
+  font-size: 1.9em;
+  margin-bottom: 20px;
+  font-weight: 700;
+  border-left: 6px solid #2E604A;
+  padding-left: 12px;
+}
+
+.welcome-content p {
+  font-size: 1.05em;
+  margin-bottom: 15px;
+}
+
+.welcome-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.welcome-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* ====== MISSION SECTION WITH IMAGE ====== */
+.mission {
+  background: #F8F7F3;
+  border-radius: 10px;
+  padding: 50px 30px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.mission-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mission-text {
+  flex: 1 1 55%;
+  color: #2B2B2B;
+  line-height: 1.7;
+}
+
+.mission-text h2 {
+  color: #1E4C36;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-left: 6px solid #2E604A;
+  padding-left: 10px;
+}
+
+.mission-text ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  font-size: 1.05em;
+}
+
+.mission-text li {
+  margin-bottom: 8px;
+}
+
+.mission-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.mission-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== WILLOW SPRINGS IMAGE BELOW ====== */
+.willow-photo {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+.willow-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== FACEBOOK FEED SECTION ====== */
+.facebook-feed {
+  background: #FFFFFF;
+  color: #204734;
   padding: 40px 20px;
+  text-align: center;
   max-width: 900px;
   margin: 30px auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1,
-h2,
-h3 {
-  color: #204734; /* dark green headings for contrast */
+.facebook-feed h2 {
+  color: #2E604A;
+  margin-bottom: 20px;
 }
 
-ul {
-  margin-left: 20px;
-}
-
-/* ====== FIX MISSION SECTION CUT-OFF ====== */
-.mission-statement {
-  overflow: visible;
-  height: auto;
-  padding-bottom: 40px;
-}
-
-/* ====== LINKS ====== */
-a {
-  color: #2E604A; /* dark green links for readability */
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #204734;
+.facebook-feed iframe {
+  width: 100% !important;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /* ====== FORMS ====== */
@@ -176,31 +305,8 @@ footer a:hover i {
   color: #c5f1db; /* lighter green accent on hover */
 }
 
-/* ====== FACEBOOK FEED SECTION ====== */
-.facebook-feed {
-  background: #FFFFFF;
-  color: #204734;
-  padding: 40px 20px;
-  text-align: center;
-  max-width: 900px;
-  margin: 30px auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.facebook-feed h2 {
-  color: #2E604A;
-  margin-bottom: 20px;
-}
-
-.facebook-feed iframe {
-  width: 100% !important;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
 /* ====== RESPONSIVE DESIGN ====== */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -209,5 +315,28 @@ footer a:hover i {
 
   .hero h1 {
     font-size: 2em;
+  }
+
+  .welcome {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-text {
+    order: 2;
+  }
+
+  .mission-image {
+    order: 1;
+  }
+
+  .mission-image img,
+  .welcome-image img {
+    max-width: 90%;
   }
 }
