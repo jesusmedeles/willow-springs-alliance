@@ -501,6 +501,41 @@ button:hover {
 .landmark-list li {
   margin-bottom: 10px;
 }
+
+/* ====== MEMBERSHIP BENEFITS SECTION ====== */
+.membership-benefits {
+  background: #F8F7F3;
+  padding: 40px 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.membership-benefits h2 {
+  color: #3A7CA5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.membership-benefits p {
+  font-size: 1.05em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2C2C2C;
+}
+
+.membership-benefits ol {
+  margin-left: 25px;
+  color: #2C2C2C;
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+.membership-benefits li {
+  margin-bottom: 18px;
+}
+
 /* ====== JOIN PAGE STYLING ====== */
 .page-container {
   max-width: 900px;
