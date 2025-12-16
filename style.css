@@ -21,42 +21,11 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background: #3A7CA5; /* sky blue header */
   color: white;
-  padding: 25px 40px;
+  padding: 25px 40px; /* slightly more breathing room */
   position: relative;
   overflow: hidden;
-
-  /* Western silhouette background */
-  background-color: #3A7CA5;
-  background-image:
-    url("images/bullrider.png"),
-    url("images/houses.png"),
-    url("images/cowboy-cattle.png"),
-    url("images/windmill.png");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position:
-    right bottom 10px,
-    center bottom 0,
-    left bottom 10px,
-    left 15% bottom 0;
-  background-size:
-    120px auto,
-    150px auto,
-    120px auto,
-    100px auto;
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(58, 124, 165, 0.65); /* blue overlay tint */
-  z-index: 1;
-}
-
-header * {
-  position: relative;
-  z-index: 2;
 }
 
 .header-left {
@@ -69,11 +38,11 @@ header * {
   width: 200px;  /* increased for stronger branding */
   height: auto;
   filter: brightness(0) invert(1);
-  transition: transform 0.3s ease; /* smooth hover effect */
+  transition: transform 0.3s ease;
 }
 
 .logo:hover {
-  transform: scale(1.05); /* gentle enlarge on hover */
+  transform: scale(1.05);
 }
 
 nav a {
@@ -91,7 +60,7 @@ nav a.active {
   color: #eaf4f9;
 }
 
-/* --- HEADER TEXT --- */
+/* --- UPDATED HEADER TEXT STYLING --- */
 .header-text {
   max-width: 550px;
   text-align: left;
@@ -115,6 +84,71 @@ nav a.active {
   text-wrap: balance;
 }
 
+/* ====== WESTERN SILHOUETTES IN HEADER (CLEANED & BALANCED) ====== */
+.header-silhouettes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  pointer-events: none;
+  opacity: 0.15; /* balanced translucence */
+  z-index: 0;
+  padding: 0 20px;
+}
+
+.header-silhouettes img {
+  height: 70px;
+  width: auto;
+  filter: brightness(10) invert(1);
+  opacity: 0.9;
+  object-fit: contain;
+}
+
+.header-silhouettes img.windmill {
+  height: 80px;
+  opacity: 0.8;
+}
+
+.header-silhouettes img.houses {
+  height: 60px;
+  opacity: 0.7;
+}
+
+.header-silhouettes img.cowboy-cattle {
+  height: 85px;
+  opacity: 0.85;
+}
+
+.header-silhouettes img.handshake {
+  height: 75px;
+  opacity: 0.8;
+}
+
+.header-silhouettes img.bullrider {
+  height: 90px;
+  opacity: 0.95;
+}
+
+/* Optional soft fade at bottom for a polished look */
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to top, rgba(58, 124, 165, 1), rgba(58, 124, 165, 0));
+  z-index: 0;
+}
+
+header > *:not(.header-silhouettes) {
+  position: relative;
+  z-index: 1;
+}
+
 /* ====== HERO SECTION ====== */
 .hero {
   position: relative;
@@ -134,7 +168,7 @@ nav a.active {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(58, 124, 165, 0.6); /* blue overlay */
+  background: rgba(58, 124, 165, 0.6);
 }
 
 .hero-text {
@@ -279,7 +313,7 @@ nav a.active {
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* ====== WILLOW SPRINGS IMAGE ====== */
@@ -293,7 +327,7 @@ nav a.active {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* ====== FACEBOOK FEED & SOCIAL LINKS ====== */
@@ -530,10 +564,8 @@ button:hover {
     width: 90%;
   }
 
-  /* Simplify header on mobile */
-  header {
-    background-image: url("images/houses.png");
-    background-position: center bottom;
-    background-size: 140px auto;
+  /* Hide silhouettes on small screens */
+  .header-silhouettes {
+    display: none;
   }
 }
