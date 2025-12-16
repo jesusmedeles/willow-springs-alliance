@@ -3,12 +3,12 @@ body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
-  color: #2C2C2C; /* darker, more professional text color */
-  background-color: #FAF8F3; /* soft cream background */
+  color: #2C2C2C;
+  background-color: #FAF8F3;
 }
 
 h1, h2, h3 {
-  color: #204734; /* dark green headings for contrast */
+  color: #3A7CA5; /* soothing sky blue for headings */
 }
 
 ul {
@@ -21,7 +21,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background: #2E604A; /* dark green header */
+  background: #3A7CA5; /* sky blue header */
   color: white;
   padding: 20px 30px;
 }
@@ -33,9 +33,9 @@ header {
 }
 
 .logo {
-  width: 160px; /* slightly larger logo */
+  width: 160px;
   height: auto;
-  filter: brightness(0) invert(1); /* makes dark SVG logos appear white on dark backgrounds */
+  filter: brightness(0) invert(1);
 }
 
 .header-text {
@@ -86,7 +86,7 @@ nav a.active {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(46, 96, 74, 0.6); /* green overlay for readability */
+  background: rgba(58, 124, 165, 0.6); /* blue overlay */
 }
 
 .hero-text {
@@ -97,8 +97,8 @@ nav a.active {
 
 .hero h1,
 .hero p {
-  color: #ffffff; /* bright white hero text */
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); /* shadow for contrast */
+  color: #ffffff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
@@ -112,7 +112,7 @@ nav a.active {
 
 /* ====== WELCOME SECTION ====== */
 .welcome {
-  background: #F8F7F3; /* soft cream background */
+  background: #F8F7F3;
   padding: 60px 30px;
   display: flex;
   align-items: center;
@@ -132,11 +132,11 @@ nav a.active {
 }
 
 .welcome-content h2 {
-  color: #1E4C36;
+  color: #3A7CA5; /* updated to match header blue */
   font-size: 1.9em;
   margin-bottom: 20px;
   font-weight: 700;
-  border-left: 6px solid #2E604A;
+  border-left: 6px solid #3A7CA5;
   padding-left: 12px;
 }
 
@@ -157,7 +157,7 @@ nav a.active {
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
-/* ====== MISSION SECTION WITH IMAGE ====== */
+/* ====== MISSION SECTION ====== */
 .mission {
   background: #F8F7F3;
   border-radius: 10px;
@@ -182,11 +182,11 @@ nav a.active {
 }
 
 .mission-text h2 {
-  color: #1E4C36;
+  color: #3A7CA5;
   font-size: 1.8em;
   margin-bottom: 15px;
   font-weight: 700;
-  border-left: 6px solid #2E604A;
+  border-left: 6px solid #3A7CA5;
   padding-left: 10px;
 }
 
@@ -212,7 +212,7 @@ nav a.active {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* ====== WILLOW SPRINGS IMAGE BELOW ====== */
+/* ====== WILLOW SPRINGS IMAGE ====== */
 .willow-photo {
   text-align: center;
   margin: 50px auto;
@@ -226,27 +226,61 @@ nav a.active {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* ====== FACEBOOK FEED SECTION ====== */
+/* ====== FACEBOOK FEED & SOCIAL SECTION ====== */
 .facebook-feed {
   background: #FFFFFF;
   color: #204734;
-  padding: 40px 20px;
+  padding: 40px 20px 20px 20px;
   text-align: center;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 30px auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .facebook-feed h2 {
-  color: #2E604A;
+  color: #3A7CA5;
   margin-bottom: 20px;
 }
 
 .facebook-feed iframe {
   width: 100% !important;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  background: #3A7CA5;
+  color: #E8DFD0;
+  padding: 25px 15px;
+  border-radius: 0 0 8px 8px;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+}
+
+footer h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #E8DFD0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a i {
+  margin-right: 6px;
+}
+
+footer a:hover i {
+  color: #b7e1f9;
 }
 
 /* ====== FORMS ====== */
@@ -267,7 +301,7 @@ textarea {
 }
 
 button {
-  background: #2E604A;
+  background: #3A7CA5;
   color: white;
   border: none;
   padding: 10px;
@@ -277,32 +311,7 @@ button {
 }
 
 button:hover {
-  background: #204734;
-}
-
-/* ====== FOOTER ====== */
-footer {
-  text-align: center;
-  background: #204734;
-  color: #E8DFD0;
-  padding: 20px;
-}
-
-footer a {
-  color: #E8DFD0;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer a i {
-  margin-right: 6px;
-}
-
-footer a:hover i {
-  color: #c5f1db; /* lighter green accent on hover */
+  background: #2c6d93;
 }
 
 /* ====== RESPONSIVE DESIGN ====== */
@@ -317,11 +326,7 @@ footer a:hover i {
     font-size: 2em;
   }
 
-  .welcome {
-    flex-direction: column;
-    text-align: center;
-  }
-
+  .welcome,
   .mission-container {
     flex-direction: column;
     text-align: center;
@@ -338,5 +343,9 @@ footer a:hover i {
   .mission-image img,
   .welcome-image img {
     max-width: 90%;
+  }
+
+  footer {
+    width: 90%;
   }
 }
