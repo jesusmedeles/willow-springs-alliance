@@ -778,3 +778,15 @@ nav img.usa-flag {
     height: 150px;
   }
 }
+/* ====== FOOTER LINKS (FIXED COLOR) ====== */
+footer a {
+  color: #E8DFD0; /* matches the light cream text in your footer */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff; /* bright white when hovered */
+  text-decoration: underline;
+}
