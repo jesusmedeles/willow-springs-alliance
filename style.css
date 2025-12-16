@@ -21,11 +21,42 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background: #3A7CA5; /* sky blue header */
   color: white;
-  padding: 25px 40px; /* slightly more breathing room */
-  position: relative; /* needed for silhouettes */
+  padding: 25px 40px;
+  position: relative;
   overflow: hidden;
+
+  /* Western silhouette background */
+  background-color: #3A7CA5;
+  background-image:
+    url("images/bullrider.png"),
+    url("images/houses.png"),
+    url("images/cowboy-cattle.png"),
+    url("images/windmill.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position:
+    right bottom 10px,
+    center bottom 0,
+    left bottom 10px,
+    left 15% bottom 0;
+  background-size:
+    120px auto,
+    150px auto,
+    120px auto,
+    100px auto;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(58, 124, 165, 0.65); /* blue overlay tint */
+  z-index: 1;
+}
+
+header * {
+  position: relative;
+  z-index: 2;
 }
 
 .header-left {
@@ -60,7 +91,7 @@ nav a.active {
   color: #eaf4f9;
 }
 
-/* --- UPDATED HEADER TEXT STYLING --- */
+/* --- HEADER TEXT --- */
 .header-text {
   max-width: 550px;
   text-align: left;
@@ -82,37 +113,6 @@ nav a.active {
   max-width: 90%;
   display: block;
   text-wrap: balance;
-}
-
-/* ====== WESTERN SILHOUETTES IN HEADER ====== */
-.header-silhouettes {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  pointer-events: none; /* keeps links clickable */
-  opacity: 0.12;        /* subtle overall opacity */
-  z-index: 0;
-}
-
-.header-silhouettes img {
-  height: 90px;
-  width: auto;
-  filter: brightness(10) invert(1); /* makes them light on blue */
-  opacity: 0.8;
-}
-
-.header-silhouettes img:last-child {
-  height: 110px; /* emphasize bull rider */
-  opacity: 0.9;
-}
-
-header > *:not(.header-silhouettes) {
-  position: relative;
-  z-index: 1;
 }
 
 /* ====== HERO SECTION ====== */
@@ -279,7 +279,7 @@ header > *:not(.header-silhouettes) {
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
 /* ====== WILLOW SPRINGS IMAGE ====== */
@@ -293,7 +293,7 @@ header > *:not(.header-silhouettes) {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
 /* ====== FACEBOOK FEED & SOCIAL LINKS ====== */
@@ -530,8 +530,10 @@ button:hover {
     width: 90%;
   }
 
-  /* Responsive Silhouettes */
-  .header-silhouettes {
-    display: none; /* hide silhouettes on small screens for clarity */
+  /* Simplify header on mobile */
+  header {
+    background-image: url("images/houses.png");
+    background-position: center bottom;
+    background-size: 140px auto;
   }
 }
